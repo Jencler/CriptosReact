@@ -30,12 +30,14 @@ function App() {
       <div className="cajas">
       <ol className="lista">
           {
-            criptos.map(({id,name, priceUsd, symbol,explorer}) =>(
+            criptos.map(({id,name, priceUsd, symbol,explorer,changePercent24Hr}) =>(
               <li key={id} >
-                <span>Nombre: {name}</span>
-                <span>Precio: ${priceUsd}</span>
+                <h2>Nombre: {name}</h2>
+                <span>Precio: {parseFloat(priceUsd).toFixed(5)}</span>
                 <span>Simbolo: {symbol}</span>
-                <span>Web: <a href={explorer} >{name}</a></span>
+                <span>Web: <a href={explorer} >{name}</a></span> 
+                <span>Cambio 24Hr <span className={parseFloat(changePercent24Hr).toFixed(5) > 0 ? "positivo" : "negativo"
+                } >%{parseFloat(changePercent24Hr).toFixed(5)}</span></span>
                 </li>
             ))
           }

@@ -11,7 +11,7 @@ html{
 .main_content{
  width: 100%;
  height: auto;
- background-color: rgb(225, 253, 253);
+ background-color: rgb(97, 25, 179);
  text-align: center;
  padding: 20px;
 }
@@ -26,9 +26,9 @@ html{
     
 }
 .cajas ol li{
-    background-color: rgb(0, 170, 255);
+    background-color: rgb(66, 100, 255);
     width: 300px;
-    height: 200px;
+    height: auto;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -36,14 +36,29 @@ html{
     text-align: start;
     gap: 8px;
     transition: all 0.2s ease-in-out;
+    color: rgb(41, 39, 39);
+    
 }
 .cajas ol li:hover{
     transform: scale(1.1);
+    
 }
 
+.cajas ol li span a{
+    color: rgb(4, 8, 233);
+    font-weight: 600;
+}
 
 a{
     text-decoration: none;
-    color: rgb(216, 76, 25);
+    color: rgb(167, 4, 204);
     
+}
+
+.positivo{
+    color: greenyellow;
+
+}
+.negativo{
+    color: red;
 }
