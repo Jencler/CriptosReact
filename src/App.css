@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_content{
+ width: 100%;
+ height: auto;
+ background-color: rgb(225, 253, 253);
+ text-align: center;
+ padding: 20px;
+}
+
+.cajas ol{
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    
+}
+.cajas ol li{
+    background-color: rgb(0, 170, 255);
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    text-align: start;
+    gap: 8px;
+    transition: all 0.2s ease-in-out;
+}
+.cajas ol li:hover{
+    transform: scale(1.1);
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(216, 76, 25);
+    
+}
